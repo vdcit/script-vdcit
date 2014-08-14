@@ -6,4 +6,4 @@
 #!/bin/python
 
 from nova import version
-print version.version_string()
+print "Phien ban OpenStack hien tai la: "version.version_string()
