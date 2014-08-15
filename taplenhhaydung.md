@@ -18,3 +18,9 @@ yum -y update && yum -y install setup && \
 yum -y install setuptool && \
 yum -y install setuptool system-config-network-tui system-config-firewall
 ```
+
+### Đặt lại thời gian cho CENTOS
+```sh
+rm -rf /etc/localtime
+ln -s  /usr/share/zoneinfo/Asia/ /etc/localtime
+```
