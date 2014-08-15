@@ -24,3 +24,9 @@ yum -y install setuptool system-config-network-tui system-config-firewall
 rm -rf /etc/localtime
 ln -s  /usr/share/zoneinfo/Asia/ /etc/localtime
 ```
+
+### RSYSLOG
+
+```sh
+mysql -u rsyslog -p Syslog -e "select ReceivedAt,Facility,Priority,FromHost,Message from SystemEvents;"
+```
