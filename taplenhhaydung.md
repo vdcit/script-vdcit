@@ -11,7 +11,7 @@ echo "u12-monitor.testcong.vn" > /etc/hostname
 hostname -F /etc/hostname
 ```
 
-Cài đặt lệnh setuptools
+### Cài đặt lệnh setuptools
 - Cài đặt lệnh setup cho Centos 6.5 minimal
 ```sh
 yum -y update && yum -y install setup 
