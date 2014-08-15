@@ -14,5 +14,7 @@ hostname -F /etc/hostname
 Cài đặt lệnh setuptools
 - Cài đặt lệnh setup cho Centos 6.5 minimal
 ```sh
-yum update && yum -y install setup && yum -y install setuptool && yum install setuptool system-config-network-tui system-config-firewall
+yum update && yum -y install setup 
+yum -y install setuptool 
+yum -y install setuptool system-config-network-tui system-config-firewall
 ```
