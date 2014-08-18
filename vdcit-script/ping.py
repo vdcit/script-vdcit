@@ -3,19 +3,23 @@ import signal
 import time
 import subprocess
 import sys
-import datetime
+from datetime import datetime
 
 """Thay doi cau lenh va duong dan o day"""
 
 host = raw_input('nhap vao ten host: ')
 packets = int(raw_input('nhap vao so goi tin: '))
-Command = 'ping google.com.vn'
-directory = '/home/cherry/Documents'
+#Command = 'ping google.com.vn'
+#directory = '/home/cherry/Documents'
+
+time1 = datetime.now()
 
 p = subprocess.Popen('ping -c %d -q %s' %(packets, host), stdout=subprocess.PIPE, shell=True)
 (output, err) = p.communicate()
 
 p_status = p.wait()
+time2 = datetime.now()
+total = time2 - time1
 output = output.split(',')
 packets_r = int(output[1].strip('received'))
 packets_l = packets-(int(packets_r))
@@ -39,6 +43,6 @@ print "so goi tin mat: ", packets_l
 print "phan tram goi tin bi mat: ", "{:.2%}".format(packets_p)
 print 'Thoi gian tra ve goi tin nhanh nhat %s ms' % ms_min
 print 'Thoi gian tra ve goi tin cham nhat %s ms' % ms_max
-
+print 'Tong thoi gian thuc hien ping : ', total
 
 
