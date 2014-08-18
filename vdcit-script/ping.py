@@ -37,9 +37,9 @@ ms_max = b[5]
 
 
 #print output
-print "so goi tin da gui : ", packets
-print "so goi tin da nhan lai: ", packets_r
-print "so goi tin mat: ", packets_l
+print "So goi tin da gui : ", packets
+print "So goi tin da nhan lai: ", packets_r
+print "So goi tin mat: ", packets_l
 print "phan tram goi tin bi mat: ", "{:.2%}".format(packets_p)
 print 'Thoi gian tra ve goi tin nhanh nhat %s ms' % ms_min
 print 'Thoi gian tra ve goi tin cham nhat %s ms' % ms_max
