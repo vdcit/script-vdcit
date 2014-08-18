@@ -7,8 +7,8 @@ from datetime import datetime
 
 """Thay doi cau lenh va duong dan o day"""
 
-host = raw_input('nhap vao ten host: ')
-packets = int(raw_input('nhap vao so goi tin: '))
+host = raw_input('Nhap vao ten host hoac dia chi IP: ')
+packets = int(raw_input('Nhap vao so goi tin: '))
 #Command = 'ping google.com.vn'
 #directory = '/home/cherry/Documents'
 
